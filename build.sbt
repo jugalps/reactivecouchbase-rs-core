@@ -3,7 +3,7 @@ import sbtrelease.ReleaseStateTransformations._
 
 lazy val githubRepo   = "ReactiveCouchbase/reactivecouchbase-rs-core"
 lazy val akkaVersion  = "2.5.12"
-lazy val circeVersion = "0.9.3"
+lazy val circeVersion = "0.10.0"
 lazy val disabledPlugins = if (sys.env.get("TRAVIS_TAG").filterNot(_.isEmpty).isDefined) {
   Seq.empty
 } else {
